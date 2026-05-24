@@ -208,13 +208,74 @@
   background-color: #647C67;
   color: white;
   padding: 16px 35px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.contact-btn:hover {
+  background-color: #556B58;
+  transform: translateY(-3px) scale(1.03);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .contact-btn:hover {
   background-color: #556B58;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 18px;
+  }
+
+  .contact h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .contact p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px 22px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 26px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

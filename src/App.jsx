@@ -167,7 +167,7 @@ post operatorios y depilación láser para tu bienestar.
 
 </section>
 
-<section id="contact" className="contact">
+<section id="contact" className="contact fade-up">
   <h2>Reserva tu hora</h2>
 
   <p>
